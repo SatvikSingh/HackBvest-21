@@ -801,7 +801,11 @@ body {
   overflow: hidden;
   width: 100%;
 }
-
+#demo-canvas{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .accordion-theme ul li div a {
   display: block;
   height: 350px;
