@@ -230,7 +230,17 @@ body {
   position: relative;
   left: 23%;
 }
+#home{
+  background-image: url("../assets/main-bg.png");
 
+}
+.details{
+  color: white;
+  padding-top: 150px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
 .wiehack {
   position: absolute;
   z-index: 1;
@@ -750,8 +760,8 @@ body {
 /*themes section and cards*/
 
 .themes-section {
-  height: 90vh;
-  margin-top: 100px;
+  height: fit-content;
+  padding-bottom: 50px;
   background: #36065c;
   flex-direction: column;
   justify-content: center;
