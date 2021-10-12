@@ -808,7 +808,7 @@ body {
   width: 100%;
   position: relative;
   z-index: 3;
-  vertical-align: bottom;
+  /* vertical-align: bottom; */
   padding: 15px 20px;
   box-sizing: border-box;
   color: #fff;
