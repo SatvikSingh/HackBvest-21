@@ -830,7 +830,7 @@ body {
   border-color: #AB7BE3;
 }
 
-#register {
+#discord {
   background-color: #AB7BE3;
   border-radius: 30px;
   font-family: Open Sans;
@@ -839,34 +839,20 @@ body {
   border: none;
 }
 
-#register:hover {
+#discord:hover {
   background-color: #5f0da3;
 }
+.apply-button{
+  background-color: #AB7BE3;
 
-#discord {
-  margin-left: 15px;
-  font-size: 15px;
-  padding-top: 30px;
-  /* color: #ca9fec; */
-  font-weight: 700;
-  transition: 0.5s;
 }
+
 #discord-logo{
   margin-right: 15px;
 }
  #discord-text:hover {
   background-color: #36065c;
 }
-
-#discord-text {
-  /* width: fit-content; */
-  background-color: #AB7BE3;
-  border-radius: 30px;
-  font-family: Open Sans;
-  /* padding: 10px 16px; */
-  transition: 0.5s;
-  border: none;
-} 
 
 .schedule-section {
   position: relative;
