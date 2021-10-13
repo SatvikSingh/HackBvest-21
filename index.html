@@ -58,18 +58,29 @@
   <link rel="stylesheet" href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css">
 </head>
 
-<body>
+<body onload="loadingAnim()">
+  <div class="wrapper" id="loading">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="shadow"></div>
+    <div class="shadow"></div>
+    <div class="shadow"></div>
+    <span>Loading</span>
+  </div>
+
+  <div id="main">
   <header id="hero-section" class="section hero-section">
     <div id="large-header" class="large-header">
       <canvas id="demo-canvas"></canvas>
     <nav class="navbar-default fixed-top">
-      <img src="assets/logo.png" alt="hackbvest-logo" height="55px" style="margin-right: 250px" />
+      <img src="assets/logo.png" alt="hackbvest-logo" height="55px" />
       <ul class="nav-links">
         <li class="links"><a href="#about-section">About</a></li>
         <li class="links"><a href="#themes-section">Themes</a></li>
         <li class="links"><a href="#timeline-section">Schedule</a></li>
         <li class="links"><a href="#stats">Prizes</a></li>
-        <li class="links"><a href="#mentor-section">Mentors</a></li>
+        <li class="links"><a href="#sponsors-section">Sponsors</a></li>
         <li class="links"><a href="#faq-section">FAQs</a></li>
       </ul>
       <div class="burger">
@@ -84,9 +95,9 @@
       <h5 >Oct 28-29, 2021</h5>
       <div>
         <a id="register" class="btn btn-primary" href="#" role="button">Register Now</a>
-        <a id="rulebook" class="btn btn-primary" href="#" target="_blank">Rulebook</a>
+        <a id="rulebook" class="btn btn-primary" href="assets/Hackbvest'21-rulebook.pdf" target="_blank">Rulebook</a>
         <br><br>
-        <p class="discord-text"><a id="discord" href="#">Click here </a>to join the discord server!</p>
+        <p class="discord-text"><a id="discord" href="https://discord.gg/mmf48nQaay" target="_blank">Click here </a>to join the discord server!</p>
       </div>
       <!-- Countdown Timer -->
       <div class="Countdown">
@@ -119,7 +130,7 @@
 
   <!-- About Section -->
   <h1 id="current" style="margin-bottom: 100px;">About</h1>
-  <section>
+  <section id="about-section">
     <div class="container">
       <div class="row">
         <div class="col-md-6 offset-md-3 text-center">
@@ -156,161 +167,166 @@
       </div>
     </div>
   </section>
-  <section class="themes-section">
+  <section id="themes-section">
     <h1 id="current">Themes</h1>
   <br>
   <div class="accordion-theme">
     <ul>
       <li>
         <div>
-          <a href="#" class="sliderLink">
-            <h2>Studio Lighting</h2>
-            <p>Lighting<br> Light Modifiers<br> Light Controls<br> Backdrops
-            </p>
+          <a class="sliderLink">
           </a>
         </div>
       </li>
       <li>
         <div>
-          <a href="#" class="sliderLink">
-            <h2>Filmmaking Gear</h2>
-            <p>LED Lighting<br> Scrim Jim Cine<br> Chroma-Key
-            </p>
+          <a class="sliderLink">
           </a>
         </div>
       </li>
       <li>
         <div>
-          <a href="#" class="sliderLink">
-            <h2>Speedlight Modifiers</h2>
-            <p>Apollo<br> LunaGrip
-              <br> Rapid Box</p>
+          <a class="sliderLink">
           </a>
         </div>
       </li>
       <li>
         <div>
-          <a href="#" class="sliderLink">
-            <h2>Travel Photography</h2>
-            <p>Rapid Box<br> Reflectors
-              <br> Cases
-            </p>
+          <a class="sliderLink">
           </a>
         </div>
       </li>
       <li>
         <div>
-          <a href="#" class="sliderLink">
-            <h2>Newborn Photography</h2>
-            <p>Props<br> Backdrops
-              <br> Lighting
-            </p>
+          <a class="sliderLink">
           </a>
         </div>
       </li>
       <li>
         <div>
-          <a href="#" class="sliderLink">
-            <h2>Photo Enthusiast</h2>
-            <p>CFL Lighting<br> Reflectors
-              <br> Backdrops
-            </p>
+          <a class="sliderLink">
+          </a>
+        </div>
+      </li>
+      <li>
+        <div>
+          <a class="sliderLink">
           </a>
         </div>
       </li>
     </ul>
   </div>
   </section>
+
   <section class="timeline-div" id="timeline-section">
     <h1 id="current">Schedule</h1>
-    <!-- <div class="timeline">
-      <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
-        <div class="timeline__event__icon ">
-          <i class="lni-cake"></i>
-          <div class="timeline__event__date">
-            <center>09-10-2021 <br> to <br> 22-10-2021</center>
+    <ul class="timeline">
+      <!-- Item 1 -->
+      <li class="timeline-item">
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag">Registrations</span>
+            <span class="time-wrapper"><span class="time">9<sup>th</sup> - 23<sup>rd</sup> October</span></span>
           </div>
+          <div class="desc">Register yourself on the link provided to participate!</div>
         </div>
-        <div class="timeline__event__content ">
-          <div class="timeline__event__title">
-            Registrations
+      </li>
+    
+      <!-- Item 2 -->
+      <li class="timeline-item">
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag">Shortlisting</span>
+            <span class="time-wrapper"><span class="time">23<sup>rd</sup> - 26<sup>th</sup> October</span></span>
           </div>
-          <div class="timeline__event__description">
-            <p>Register yourself on the link provided to participate!</p>
-          </div>
+          <div class="desc">The teams will be shortlisted based on their ideas and abstracts by our judging panel!</div>
         </div>
-      </div>
-      <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
-        <div class="timeline__event__icon">
-          <i class="lni-burger"></i>
-          <div class="timeline__event__date">
-            <center>22-10-2021 <br> to <br> 24-10-2021</center>
+      </li>
+    
+      <!-- Item 3 -->
+      <li class="timeline-item">
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag">Hackathon Day 1</span>
+            <span class="time-wrapper"><span class="time">28<sup>th</sup> October</span></span>
           </div>
-        </div>
-        <div class="timeline__event__content">
-          <div class="timeline__event__title">
-            Shortlisting Teams
-          </div>
-          <div class="timeline__event__description">
-            <p>The teams will be shortlisted based on their ideas and abstracts by our judging panel!</p>
-          </div>
-        </div>
-      </div>
-      <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
-        <div class="timeline__event__icon">
-          <i class="lni-cake"></i>
-          <div class="timeline__event__date">
-            28-10-2021
-          </div>
-        </div>
-        <div class="timeline__event__content">
-          <div class="timeline__event__title">
-            Hackathon Day 1
-          </div>
-          <div class="timeline__event__description">
-            <p>
+          <div class="desc">
             <ul>
-              <li>9:00-9:30AM: Registration</li>
-              <li>10:30AM: Hacking Starts</li>
-              <li>12:30PM: 1st Mentoring Round</li>
-              <li>3:30PM: 1st Evaluation Round</li>
-              <li>7:00PM: 2nd Mentoring Round (B-Plan)</li>
-              <li>9:30PM: 2nd Evaluation Round</li>
+              <li class="desc-item">9:00-9:30AM: Registration</li>
+              <li class="desc-item">10:30AM: Hacking Starts</li>
+              <li class="desc-item">12:30PM: 1st Mentoring Round</li>
+              <li class="desc-item">3:30PM: 1st Evaluation Round</li>
+              <li class="desc-item">7:00PM: 2nd Mentoring Round (B-Plan)</li>
+              <li class="desc-item">9:30PM: 2nd Evaluation Round</li>
             </ul>
-            </p>
           </div>
+        </div>
+      </li>
 
-        </div>
-      </div>
-      <div class="timeline__event animated fadeInUp timeline__event--type1">
-        <div class="timeline__event__icon">
-          <i class="lni-cake"></i>
-          <div class="timeline__event__date">
-            29-10-2021
+      <li class="timeline-item">
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag">Hackathon Day 2</span>
+            <span class="time-wrapper"><span class="time">29<sup>th</sup> October</span></span>
           </div>
-        </div>
-        <div class="timeline__event__content">
-          <div class="timeline__event__title">
-            Hackathon Day 2
-          </div>
-          <div class="timeline__event__description">
-            <p>
+          <div class="desc">
             <ul>
-              <li>8:00 AM: 3rd Mentoring Round (Presentation)</li>
-              <li>9:30 AM: Final Evaluation Round</li>
+              <li class="desc-item">8:00 AM: 3rd Mentoring Round (Presentation)</li>
+              <li class="desc-item">9:30 AM: Final Evaluation Round</li>
             </ul>
-            </p>
           </div>
         </div>
-      </div>
+      </li>
+    </ul>
 
-    </div> -->
    <!-- Prizes Section -->
+
    <section class="stat prizes-section" id="stats">
     <h1 id="past">Prizes</h1>
     <h3 class="text-center">
       A Prize Pool of worth ₹40,000!
     </h3>
+    </section>
+  
+    <section id="sponsors-section">
+    <div class="our-sponsors">
+      <h1 id="our-spons">Our Sponsors</h1>
+      <section class="current-logos slider">
+        <div class="slide">
+          <img src="assets/bvest.png">
+        </div>
+        <div class="slide">
+          <img src="assets/bvest.png">        
+        </div>
+        <div class="slide">
+          <img src="assets/bvest.png">        
+        </div>
+        <div class="slide">
+          <img src="assets/bvest.png">        
+        </div>
+        <div class="slide">
+        <a href="https://yocket.in/" target="_blank">  
+          <img src="assets/bvest.png"> 
+        </a>
+        </div>
+        <div class="slide">
+          <img src="assets/bvest.png">
+        </div>
+        <div class="slide">
+          <img src="assets/bvest.png">
+        </div>
+        <div class="slide">
+          <img src="assets/bvest.png">
+        </div>
+        <div class="slide">
+          <img src="assets/bvest.png">
+        </div>
+      </section>
+    </div>
   </section>
 
   <!-- Mentor Section -->
@@ -395,6 +411,7 @@
     <h1 id="faqs">FAQs</h1>
     <div class="container">
       <div class="row-faq">
+
         <div class="col-lg-12 col-md-12 col-sm-6">
           <button class="accordion">Who should participate?</button>
           <div class="panel">
@@ -412,12 +429,11 @@
             </p>
           </div>
 
-          <button class="accordion">How will the hackathon be conducted?</button>
+          <button class="accordion">
+            Cost for participation in the hackathon?
+          </button>
           <div class="panel">
-            <p>
-              The hackathon will be conducted online, so you can participate
-              sitting in the comfort of your home too.
-            </p>
+            <p>The registration is absolutely free.</p>
           </div>
 
           <button class="accordion">Number of members in a team?</button>
@@ -425,12 +441,15 @@
             <p>Minimum 2 and Maximum 4.</p>
           </div>
         </div>
+
         <div class="col-lg-12 col-md-12 col-sm-6">
-          <button class="accordion">
-            Cost for participation in the hackathon?
-          </button>
+          
+          <button class="accordion">How will the hackathon be conducted?</button>
           <div class="panel">
-            <p>The registration is absolutely free.</p>
+            <p>
+              The hackathon will be conducted online, so you can participate
+              sitting in the comfort of your home too.
+            </p>
           </div>
 
           <button class="accordion">What is the selection procedure?</button>
@@ -465,15 +484,15 @@
           style="text-decoration: none; color: #64c3eb">bvest.bvcoe@gmail.com</a>
       </h2>
       <div class="icons-footer">
-        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.facebook.com/Bvest2021-270379328134236" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/bvest.bvcoe/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/2021Bvest" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/bvest-2021/" target="_blank"><i class="fab fa-linkedin"></i></a>
       </div>
       <h5>Made with ❤️ by Team HackBvest</h5>
     </div>
   </section>
+  </div>
 
   <!-- Particles.js -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -484,6 +503,17 @@
   <script src="js/bootstrap.js"></script>
   <script src="js/script.js"></script>
   <script src="js/particles.js"></script>
+
+  <script>
+    var main = document.getElementById("main");
+    main.style.display = 'none';
+    var load = document.getElementById("loading");
+    setTimeout(
+      function(){ 
+        main.style.display = 'block';
+        load.style.display = 'none'; 
+      }, 2000);
+  </script>
 
   <script>
     var acc = document.getElementsByClassName("accordion");
@@ -561,6 +591,7 @@
   <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js"></script>
   <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js"></script>
   <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.30.3/tsparticles.min.js"></script>
   <script src="js/particles.js"></script>
   <script src="js/nav.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
@@ -569,6 +600,7 @@
   <script src="js/timeline.js"></script>
   <script src="js/past-sponsors.js"></script>
   <script src="js/our-sponsors.js"></script>
+  <script src="js/confetti.js"></script>
 </body>
 
 </html>
