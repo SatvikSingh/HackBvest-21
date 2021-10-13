@@ -844,21 +844,29 @@ body {
 }
 
 #discord {
+  margin-left: 15px;
   font-size: 15px;
   padding-top: 30px;
-  color: #ca9fec;
+  /* color: #ca9fec; */
   font-weight: 700;
   transition: 0.5s;
 }
-
-#discord:hover {
-  color: #7e53a1;
+#discord-logo{
+  margin-right: 15px;
+}
+ #discord-text:hover {
+  background-color: #36065c;
 }
 
-.discord-text {
-  color: white;
-  font-size: 15px;
-}
+#discord-text {
+  /* width: fit-content; */
+  background-color: #AB7BE3;
+  border-radius: 30px;
+  font-family: Open Sans;
+  /* padding: 10px 16px; */
+  transition: 0.5s;
+  border: none;
+} 
 
 .schedule-section {
   position: relative;
