@@ -814,7 +814,10 @@ body {
   -o-transition: 0.25s linear 0s;
   transition: 0.25s linear 0s;
 }
-
+#buttons{
+  display: flex;
+  justify-content: center;
+}
 #rulebook {
   background-color: transparent;
   border-radius: 30px;
@@ -841,10 +844,6 @@ body {
 
 #discord:hover {
   background-color: #5f0da3;
-}
-.apply-button{
-  background-color: #AB7BE3;
-
 }
 
 #discord-logo{
