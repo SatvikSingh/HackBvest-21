@@ -818,6 +818,10 @@ body {
   display: flex;
   justify-content: center;
 }
+.apply-button{
+  background-color: #AB7BE3;
+  border-color: #AB7BE3;
+}
 #rulebook {
   background-color: transparent;
   border-radius: 30px;
