@@ -5,6 +5,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVVGLTTCB3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
+
     function gtag() {
       dataLayer.push(arguments);
     }
@@ -70,245 +71,286 @@
   </div>
 
   <div id="main">
-  <header id="hero-section" class="section hero-section">
-    <div id="large-header" class="large-header">
-      <canvas id="demo-canvas"></canvas>
-    <nav class="navbar-default fixed-top">
-      <img src="assets/logo.png" alt="hackbvest-logo" height="55px" />
-      <ul class="nav-links">
-        <li class="links"><a href="#about-section">About</a></li>
-        <li class="links"><a href="#themes-section">Themes</a></li>
-        <li class="links"><a href="#timeline-section">Schedule</a></li>
-        <li class="links"><a href="#stats">Prizes</a></li>
-        <li class="links"><a href="#sponsors-section">Sponsors</a></li>
-        <li class="links"><a href="#faq-section">FAQs</a></li>
-      </ul>
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-    </nav>
-    <div class="details">
-      <h1 >HackBvest'21</h1>
-      <h3 >24 hour virtual hackathon!</h3>
-      <h5 >Oct 28-29, 2021</h5>
-      <div>
-        <div id="buttons">
-          <a href="#" role="button" > 
-            <div class="apply-button" data-hackathon-slug="Hackbvest'21" data-button-theme="light" >
+    <header id="hero-section" class="section hero-section">
+      <div id="large-header" class="large-header">
+        <canvas id="demo-canvas"></canvas>
+        <nav class="navbar-default fixed-top">
+          <img src="assets/logo.png" alt="hackbvest-logo" height="55px" />
+          <ul class="nav-links">
+            <li class="links"><a href="#about-section">About</a></li>
+            <li class="links"><a href="#themes-section">Themes</a></li>
+            <li class="links"><a href="#timeline-section">Schedule</a></li>
+            <li class="links"><a href="#stats">Prizes</a></li>
+            <li class="links"><a href="#sponsors-section">Sponsors</a></li>
+            <li class="links"><a href="#faq-section">FAQs</a></li>
+          </ul>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+        <div class="details">
+          <h1>HackBvest'21</h1>
+          <h3>24 hour virtual hackathon!</h3>
+          <h5>Oct 28-29, 2021</h5>
+          <div>
+            <center>
+            <div class="apply-button" data-hackathon-slug="hackbvest-21" data-button-theme="light"
+              style="height: 44px; width: 320px; z-index: 1000; margin-bottom: 10px;"></div>
+            </center>
+            <div class="home-buttons">
+            <a id="rulebook" class="btn btn-primary" href="assets/Hackbvest'21-rulebook.pdf"
+              target="_blank"><i class="fas fa-book"></i> &nbsp; Rulebook</a>
+              <a id="discord" class="btn btn-primary" href="https://discord.gg/Z2dvY6ahPm"
+              target="_blank"><i class="fab fa-discord"></i> &nbsp; Join Our Discord</a>
             </div>
-          </a>
-          <a id="rulebook" class="btn btn-primary" href="assets/Hackbvest'21-rulebook.pdf" role="button" target="_blank"> 
-            <!-- <div class="apply-button" data-hackathon-slug="YOUR-HACKATHON-SLUG" data-button-theme="dark" > -->
-              Rulebook
-            <!-- </div> -->
-          </a>
-        </div>
-       
-        <br><br><br>
-          <a id="discord" href="https://discord.gg/mmf48nQaay" target="_blank">
-            <i class="fab fa-discord fa-lg" id="discord-logo"></i>
-              Join Our Discord Server
-          </a>
-      </div>
-      <!-- Countdown Timer -->
-      <div class="Countdown">
-        <div class="col-xs-12">
-          <section id="count-up-section" class="count-up-section">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-12" style="
+          </div>
+          <!-- Countdown Timer -->
+          <div class="Countdown">
+            <div class="col-xs-12">
+              <section id="count-up-section" class="count-up-section">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-12" style="
                       height: 30vh;
                       display: flex;
                       align-items: center;
                       justify-content: center;
                     ">
-                  <div class="flipTimemodulesboxes">
-                    <div class="flipTimebox">
-                      <div class="flipclock1"></div>
-                      <div class="flipclock1message"></div>
+                      <div class="flipTimemodulesboxes">
+                        <div class="flipTimebox">
+                          <div class="flipclock1"></div>
+                          <div class="flipclock1message"></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </section>
             </div>
-          </section>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <h1 id="current" style="margin-bottom: 100px;">About</h1>
+    <section id="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3 text-center">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="feature_item text-center">
+              <i id="wiehackIcon" class="fa fa-flag"></i>
+              <h3 class="feature_title">Flagship Event</h3>
+              <p class="feature_text">HackBVEST’21 is a hackathon being organized by Bharati Vidyapeeth’s College of
+                Engineering as the flagship event of its annual tech fest BVEST.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature_item text-center">
+              <i id="wiehackIcon" class="fas fa-globe"></i>
+              <h3 class="feature_title">Global Innovation</h3>
+              <p class="feature_text">“Innovation is the calling card of the future and young people should be at the
+                forefront of global change.” Keeping this in mind, the primary theme for this year is TOWARDS GLOBAL
+                INNOVATION.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature_item text-center">
+              <i id="wiehackIcon" class="fas fa-brain"></i>
+              <h3 class="feature_title">24 Hours of Brainstorming!</h3>
+              <p class="feature_text">It will be a 24-hour Hackathon with various mentoring sessions in between, to
+                ensure
+                that teams get the best guidance in the sectors of technology and entrepreneurship, for their respective
+                projects.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-            
-  </div>
-  </header>
-
-  <!-- About Section -->
-  <h1 id="current" style="margin-bottom: 100px;">About</h1>
-  <section id="about-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 offset-md-3 text-center">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="feature_item text-center">
-            <i id="wiehackIcon" class="fa fa-flag"></i>
-            <h3 class="feature_title">Flagship Event</h3>
-            <p class="feature_text">HackBVEST’21 is a hackathon being organized by Bharati Vidyapeeth’s College of
-              Engineering as the flagship event of its annual tech fest BVEST.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="feature_item text-center">
-            <i id="wiehackIcon" class="fas fa-globe"></i>
-            <h3 class="feature_title">Global Innovation</h3>
-            <p class="feature_text">“Innovation is the calling card of the future and young people should be at the
-              forefront of global change.” Keeping this in mind, the primary theme for this year is TOWARDS GLOBAL
-              INNOVATION.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="feature_item text-center">
-            <i id="wiehackIcon" class="fas fa-brain"></i>
-            <h3 class="feature_title">24 Hours of Brainstorming!</h3>
-            <p class="feature_text">It will be a 24-hour Hackathon with various mentoring sessions in between, to ensure
-              that teams get the best guidance in the sectors of technology and entrepreneurship, for their respective
-              projects.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="themes-section">
-    <h1 id="current">Themes</h1>
-  <br>
-  <div class="accordion-theme">
-    <ul>
-      <li>
-        <div>
-          <a class="sliderLink">
-          </a>
-        </div>
-      </li>
-      <li>
-        <div>
-          <a class="sliderLink">
-          </a>
-        </div>
-      </li>
-      <li>
-        <div>
-          <a class="sliderLink">
-          </a>
-        </div>
-      </li>
-      <li>
-        <div>
-          <a class="sliderLink">
-          </a>
-        </div>
-      </li>
-      <li>
-        <div>
-          <a class="sliderLink">
-          </a>
-        </div>
-      </li>
-      <li>
-        <div>
-          <a class="sliderLink">
-          </a>
-        </div>
-      </li>
-      <li>
-        <div>
-          <a class="sliderLink">
-          </a>
-        </div>
-      </li>
-    </ul>
-  </div>
-  </section>
-
-  <section class="timeline-div" id="timeline-section">
-    <h1 id="current">Schedule</h1>
-    <ul class="timeline">
-      <!-- Item 1 -->
-      <li class="timeline-item">
-        <div class="direction-r">
-          <div class="flag-wrapper">
-            <span class="hexa"></span>
-            <span class="flag">Registrations</span>
-            <span class="time-wrapper"><span class="time">9<sup>th</sup> - 23<sup>rd</sup> October</span></span>
-          </div>
-          <div class="desc">Register yourself on the link provided to participate!</div>
-        </div>
-      </li>
-    
-      <!-- Item 2 -->
-      <li class="timeline-item">
-        <div class="direction-l">
-          <div class="flag-wrapper">
-            <span class="hexa"></span>
-            <span class="flag">Shortlisting</span>
-            <span class="time-wrapper"><span class="time">23<sup>rd</sup> - 26<sup>th</sup> October</span></span>
-          </div>
-          <div class="desc">The teams will be shortlisted based on their ideas and abstracts by our judging panel!</div>
-        </div>
-      </li>
-    
-      <!-- Item 3 -->
-      <li class="timeline-item">
-        <div class="direction-r">
-          <div class="flag-wrapper">
-            <span class="hexa"></span>
-            <span class="flag">Hackathon Day 1</span>
-            <span class="time-wrapper"><span class="time">28<sup>th</sup> October</span></span>
-          </div>
-          <div class="desc">
-            <ul>
-              <li class="desc-item">9:00-9:30AM: Registration</li>
-              <li class="desc-item">10:30AM: Hacking Starts</li>
-              <li class="desc-item">12:30PM: 1st Mentoring Round</li>
-              <li class="desc-item">3:30PM: 1st Evaluation Round</li>
-              <li class="desc-item">7:00PM: 2nd Mentoring Round (B-Plan)</li>
-              <li class="desc-item">9:30PM: 2nd Evaluation Round</li>
-            </ul>
-          </div>
-        </div>
-      </li>
-
-      <li class="timeline-item">
-        <div class="direction-l">
-          <div class="flag-wrapper">
-            <span class="hexa"></span>
-            <span class="flag">Hackathon Day 2</span>
-            <span class="time-wrapper"><span class="time">29<sup>th</sup> October</span></span>
-          </div>
-          <div class="desc">
-            <ul>
-              <li class="desc-item">8:00 AM: 3rd Mentoring Round (Presentation)</li>
-              <li class="desc-item">9:30 AM: Final Evaluation Round</li>
-            </ul>
-          </div>
-        </div>
-      </li>
-    </ul>
-
-   <!-- Prizes Section -->
-
-   <section class="stat prizes-section" id="stats">
-    <h1 id="past">Prizes</h1>
-    <h3 class="text-center">
-      A Prize Pool of worth ₹40,000!
-    </h3>
     </section>
-  
-    <section id="sponsors-section">
-    <div class="our-sponsors">
-      <h1 id="our-spons">Our Sponsors</h1>
-      <section class="current-logos slider">
+    <section id="themes-section">
+      <h1 id="current">Themes</h1>
+      <br>
+      <div class="accordion-theme">
+        <ul>
+          <li>
+            <div>
+              <a class="sliderLink">
+                <!-- <h2>FinTech</h2> -->
+                <!-- <p>Lighting<br> Light Modifiers<br> Light Controls<br> Backdrops
+            </p> -->
+              </a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a class="sliderLink">
+                <!-- <h2>Healthcare</h2> -->
+                <!-- <p>LED Lighting<br> Scrim Jim Cine<br> Chroma-Key
+            </p> -->
+              </a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a class="sliderLink">
+                <!-- <h2>Sustainable<br>Energy</h2> -->
+                <!-- <p>Apollo<br> LunaGrip
+              <br> Rapid Box</p> -->
+              </a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a class="sliderLink">
+                <!-- <h2>Space Tech</h2> -->
+                <!-- <p>Rapid Box<br> Reflectors
+              <br> Cases
+            </p> -->
+              </a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a class="sliderLink">
+                <!-- <h2>Gaming</h2> -->
+                <!-- <p>Props<br> Backdrops
+              <br> Lighting
+            </p> -->
+              </a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a class="sliderLink">
+                <!-- <h2>AI/ML</h2> -->
+                <!-- <p>CFL Lighting<br> Reflectors
+              <br> Backdrops
+            </p> -->
+              </a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a class="sliderLink">
+                <!-- <h2>BlockChain</h2> -->
+                <!-- <p>CFL Lighting<br> Reflectors
+              <br> Backdrops
+            </p> -->
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="timeline-div" id="timeline-section">
+      <h1 id="current">Schedule</h1>
+      <ul class="timeline">
+        <!-- Item 1 -->
+        <li class="timeline-item">
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag">Registrations</span>
+              <span class="time-wrapper"><span class="time">9<sup>th</sup> - 23<sup>rd</sup> October</span></span>
+            </div>
+            <div class="desc">Register yourself on the link provided to participate!</div>
+          </div>
+        </li>
+
+        <!-- Item 2 -->
+        <li class="timeline-item">
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag">Shortlisting</span>
+              <span class="time-wrapper"><span class="time">23<sup>rd</sup> - 26<sup>th</sup> October</span></span>
+            </div>
+            <div class="desc">The teams will be shortlisted based on their ideas and abstracts by our judging panel!
+            </div>
+          </div>
+        </li>
+
+        <!-- Item 3 -->
+        <li class="timeline-item">
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag">Hackathon Day 1</span>
+              <span class="time-wrapper"><span class="time">28<sup>th</sup> October</span></span>
+            </div>
+            <div class="desc">
+              <ul>
+                <li class="desc-item">9:00-9:30AM: Registration</li>
+                <li class="desc-item">10:30AM: Hacking Starts</li>
+                <li class="desc-item">12:30PM: 1st Mentoring Round</li>
+                <li class="desc-item">3:30PM: 1st Evaluation Round</li>
+                <li class="desc-item">7:00PM: 2nd Mentoring Round (B-Plan)</li>
+                <li class="desc-item">9:30PM: 2nd Evaluation Round</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag">Hackathon Day 2</span>
+              <span class="time-wrapper"><span class="time">29<sup>th</sup> October</span></span>
+            </div>
+            <div class="desc">
+              <ul>
+                <li class="desc-item">8:00 AM: 3rd Mentoring Round (Presentation)</li>
+                <li class="desc-item">9:30 AM: Final Evaluation Round</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Prizes Section -->
+
+      <section class="stat prizes-section" id="stats">
+        <h1 id="past">Prizes</h1>
+        <h3 class="text-center">
+          To be announced soon!
+        </h3>
+      </section>
+
+      <!-- Sponsors Section -->
+
+      <section id="sponsors-section">
+        <div class="our-sponsors">
+          <h1 id="our-spons">Our Sponsors</h1>
+          <div class="platinum-sponsors">
+            <h3>Platinum Tier</h3>
+            <center>
+              <img src="assets/polygon-logo.png">
+            </center>
+          </div>
+          <br>
+          <div class="gold-sponsors">
+            <h4>Gold Tier</h4>
+            <center>
+              <div class="gold-spons-img">
+                <img src="assets/filecoin-logo.png">
+                <img src="assets/celo-logo.png">
+                <img src="assets/tezos-logo.png">
+                <img src="assets/devfolio-logo.png">
+              </div>
+            </center>
+          </div>
+
+          <!-- <section class="current-logos slider">
         <div class="slide">
           <img src="assets/bvest.png">
         </div>
@@ -338,12 +380,12 @@
         <div class="slide">
           <img src="assets/bvest.png">
         </div>
+      </section> -->
+        </div>
       </section>
-    </div>
-  </section>
 
-  <!-- Mentor Section -->
-  <!-- <section id="mentor-section">
+      <!-- Mentor Section -->
+      <!-- <section id="mentor-section">
     <h1 id="current">Mentors & Judges</h1>
     <div class="container-mentors">
       <div class="Box">
@@ -420,91 +462,92 @@
       </div>
     </div>
   </section> -->
-  <section id="faq-section">
-    <h1 id="faqs">FAQs</h1>
-    <div class="container">
-      <div class="row-faq">
+      <section id="faq-section">
+        <h1 id="faqs">FAQs</h1>
+        <div class="container">
+          <div class="row-faq">
 
-        <div class="col-lg-12 col-md-12 col-sm-6">
-          <button class="accordion">Who should participate?</button>
-          <div class="panel">
-            <p>
-              If you're a college student and want to use your technical skills to
-              solve practical problems, you're welcome.
-            </p>
-          </div>
+            <div class="col-lg-12 col-md-12 col-sm-6">
+              <button class="accordion">Who should participate?</button>
+              <div class="panel">
+                <p>
+                  If you're a college student and want to use your technical skills to
+                  solve practical problems, you're welcome.
+                </p>
+              </div>
 
-          <button class="accordion">Any prerequisites to participate?</button>
-          <div class="panel">
-            <p>
-              Just a will and some energy! Also you may count in a laptop and
-              internet connection too.
-            </p>
-          </div>
+              <button class="accordion">Any prerequisites to participate?</button>
+              <div class="panel">
+                <p>
+                  Just a will and some energy! Also you may count in a laptop and
+                  internet connection too.
+                </p>
+              </div>
 
-          <button class="accordion">
-            Cost for participation in the hackathon?
-          </button>
-          <div class="panel">
-            <p>The registration is absolutely free.</p>
-          </div>
+              <button class="accordion">
+                Cost for participation in the hackathon?
+              </button>
+              <div class="panel">
+                <p>The registration is absolutely free.</p>
+              </div>
 
-          <button class="accordion">Number of members in a team?</button>
-          <div class="panel">
-            <p>Minimum 2 and Maximum 4.</p>
+              <button class="accordion">Number of members in a team?</button>
+              <div class="panel">
+                <p>Minimum 2 and Maximum 4.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-6">
+
+              <button class="accordion">How will the hackathon be conducted?</button>
+              <div class="panel">
+                <p>
+                  The hackathon will be conducted online, so you can participate
+                  sitting in the comfort of your home too.
+                </p>
+              </div>
+
+              <button class="accordion">What is the selection procedure?</button>
+              <div class="panel">
+                <p>
+                  Selection would be based on the idea submitted during registration.
+                  Top 25 teams would be shortlisted for the final hackathon.
+                </p>
+              </div>
+
+              <button class="accordion">How would I know if I got selected?</button>
+              <div class="panel">
+                <p>We'll send an email to let you know.</p>
+              </div>
+
+              <button class="accordion">What if I've some more doubts?</button>
+              <div class="panel">
+                <p>
+                  For any further queries, please contact :
+                  <a href="">bvest.bvcoe@gmail.com</a>.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="col-lg-12 col-md-12 col-sm-6">
-          
-          <button class="accordion">How will the hackathon be conducted?</button>
-          <div class="panel">
-            <p>
-              The hackathon will be conducted online, so you can participate
-              sitting in the comfort of your home too.
-            </p>
+      </section>
+      <section id="footer-section">
+        <div class="container">
+          <h2 id="contact">
+            Connect with us on
+            <a id="mail" href="mailto:bvest.bvcoe@gmail.com"
+              style="text-decoration: none; color: #64c3eb">bvest.bvcoe@gmail.com</a>
+          </h2>
+          <div class="icons-footer">
+            <a href="https://www.facebook.com/Bvest2021-270379328134236" target="_blank"><i
+                class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/bvest.bvcoe/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/2021Bvest" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/bvest-2021/" target="_blank"><i class="fab fa-linkedin"></i></a>
           </div>
-
-          <button class="accordion">What is the selection procedure?</button>
-          <div class="panel">
-            <p>
-              Selection would be based on the idea submitted during registration.
-              Top 25 teams would be shortlisted for the final hackathon.
-            </p>
-          </div>
-
-          <button class="accordion">How would I know if I got selected?</button>
-          <div class="panel">
-            <p>We'll send an email to let you know.</p>
-          </div>
-
-          <button class="accordion">What if I've some more doubts?</button>
-          <div class="panel">
-            <p>
-              For any further queries, please contact :
-              <a href="">bvest.bvcoe@gmail.com</a>.
-            </p>
-          </div>
+          <h5>Made with ❤️ by Team HackBvest</h5>
         </div>
-      </div>
-    </div>
-  </section>
-  <section id="footer-section">
-    <div class="container">
-      <h2 id="contact">
-        Connect with us on
-        <a id="mail" href="mailto:bvest.bvcoe@gmail.com"
-          style="text-decoration: none; color: #64c3eb">bvest.bvcoe@gmail.com</a>
-      </h2>
-      <div class="icons-footer">
-        <a href="https://www.facebook.com/Bvest2021-270379328134236" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/bvest.bvcoe/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com/2021Bvest" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/company/bvest-2021/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </div>
-      <h5>Made with ❤️ by Team HackBvest</h5>
-    </div>
-  </section>
+      </section>
   </div>
 
   <!-- Particles.js -->
@@ -599,6 +642,7 @@
       };
     });
   </script>
+
   <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
   <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js"></script>
   <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js"></script>
