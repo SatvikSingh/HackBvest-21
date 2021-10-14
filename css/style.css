@@ -326,7 +326,7 @@ body {
 }
 .details{
   color: white;
-  padding-top: 150px;
+  padding-top: 110px;
   display: grid;
   place-content: center;
   text-align: center;
@@ -341,12 +341,16 @@ body {
   font-size: 25px;
   margin-bottom: 20px;
 }
-
 .details h5 {
   font-size: 20px;
   margin-bottom: 20px;
 }
-
+#date{
+  font-family: Open Sans;
+  font-size: 30px;
+  margin-top: 10px;
+  font-weight: 700;
+}
 .wiehack {
   position: absolute;
   z-index: 1;
@@ -357,7 +361,6 @@ body {
 }
 
 .wiehack h1 {
-  font-family: Open Sans;
   margin-bottom: 2%;
   color: white;
   font-size: 45px;
