@@ -997,7 +997,10 @@ background-position: 50% 50%;
   background-image: url("../assets/blockchain.png"); 
   background-position: 50% 50%;
 }
-
+.accordion-theme ul li:nth-child(8) { 
+  background-image: url("../assets/open-invoation.png"); 
+  background-position: 50% 50%;
+}
 .accordion-theme ul li { background-size: cover; }
 .accordion-theme ul:hover li { width: 10%; }
 .accordion-theme ul:hover li:hover { width: 90%; }
